@@ -5,16 +5,16 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Proceso {
-    private String [] conv = new String[] {"", "", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", 
+    private String [] conv = new String[] {"", "", "Q", "W", "E", "R", "T", "Y", "U", "I", "", "O", "P", 
         "A", "S", "D", "F", "G", "H", "J", "K", "L", "Ñ",
         "Z", "X", "C", "V", "B", "N", "M", "m", "n", "b",
         "v", "c", "x", "z", "ñ", "l", "k", "j", "h", "g",
         "f", "d", "s", "a", "p", "o", "i", "u", "y", "t",
         "r", "e", "w", "q", "0", "1", "3", "2", "5", "4",
-        "7", "6", "8", "7", "9", "!", "#", "$", "%", "&",
+        "7", "6", "8", ":", "9", "!", "#", "$", "%", "&",
         "'", "{", "}", "*", "¡", "?", "=", ")", "(", "/",
         ",", ".", "-", "_", "[", "]", "+", "|", "°", "¬",
-        " ", ">", "<", "`", "¿", ":"};
+        " ", ">", "<", "`", "¿"};
     
     
     public int menu(){
@@ -113,7 +113,6 @@ public class Proceso {
             codigo = codigoN.toString();
             contador2 = codigo.length();
             
-            //MEJORAR EVALUACIÓN
             if(contador2 % 2 != 0)
                 codigo = "0" + codigo;
             
@@ -131,8 +130,6 @@ public class Proceso {
         }
         else
             descifrado = "El codigo no es valido ";
-        
         return descifrado;
     }
-    
 }
